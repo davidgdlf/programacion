@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body style="background-color: aquamarine;">
+  <nav>
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="mostrarpost.php">Publicaciones</a></li>
+      <li><a href="register.php">Registro</a></li>
+    </ul>
+  </nav>
+      
+	<h1>Contacto</h1>
+	<form action="insertar.php" method="post">
+		<label for="titulo">Titulo:</label>
+		<input type="text" name="titulo" id="titulo"><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email"><br>
+		<label for="mensaje">Mensaje:</label><br>
+		<textarea name="mensaje" id="mensaje"></textarea><br>
+    <label>Fecha</label>
+    <input type="date" name="fecha">
+    <label for="imagen">Imagen:</label>
+    <input type="text" id="imagen" name="imagen"><br><br>
+		<button type="submit">Publicar</button>
+    <button type="delete" class="borrar">BORRAR</button>
+	</form>    
+</body>
+</html>
